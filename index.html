@@ -10,9 +10,23 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
 </head>
 <body>
+    <form action="" onsubmit="searchPokemon(event)">
+    <input type="text" name="pokemon" autocomplete="off">
+    </form>
     <div class="pokemon-container">
         <h1>Pokedex</h1>
         <ol id="Pokedex"></ol>
+    </div>
+    <div data-poke-card class="poke-card">
+        <div data-poke-name>Pokedex
+        </div>
+        <div data-poke-img class="poke-img" src="">
+
+        </div>
+        <div data-poke-id></div>
+        <div data-poke-types class="poke-types"></div>
+        <div data-poke-id class="poke-stats"></div>
+
     </div>
     
 </body>

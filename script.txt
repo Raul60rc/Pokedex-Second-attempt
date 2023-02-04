@@ -34,8 +34,9 @@ const searchPokemon = event =>{
     const { value } = event.target.pokemon
     fetch(`https://pokeapi.co/api/v2/pokemon/${value.toLowerCase()}`)
     .then(data => data.json())
-    .then(response => renderPokemonData(response))
-    .catch(err => renderNotFound())
+    .then(response => renderPokemonData(response));
+}catch(error){
+    console.error(error)
 }
 
 const renderPokemonData = data => {

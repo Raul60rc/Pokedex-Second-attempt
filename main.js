@@ -44,4 +44,4 @@ function createPokemon(pokemon){ //DOM
 
 }
 
-fetchPokemons(151);
+fetchPokemons(152);

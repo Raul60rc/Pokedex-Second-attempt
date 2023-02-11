@@ -1,4 +1,8 @@
 const pokemonContainer = document.querySelector('.pokemon-container')
+const spinner = document.querySelector('#spinner')
+
+let offset = 1;
+let limit = 8;
 
 
 function fetchPokemon(id){
@@ -6,11 +10,13 @@ function fetchPokemon(id){
     .then(res => res.json())
     .then((data) =>{
         createPokemon(data);
+        spinner.style.display = "none";
     }
     )};
 
-function fetchPokemons(number){
- for (let index = 1; index < number; index++) {
+function fetchPokemons(offset,limit) {
+    spinner.style.display = "block";
+ for (let index = offset; index < offset; limit++) {
     fetchPokemon(index)
     }
 }
@@ -44,4 +50,4 @@ function createPokemon(pokemon){ //DOM
 
 }
 
-fetchPokemons(152);
+fetchPokemons(offset,limit);

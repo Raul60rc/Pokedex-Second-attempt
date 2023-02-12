@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--clr-black);
+    font-family: 'Rubik', sans-serif;
+}
 body{
     background-color: blue;
     background: linear-gradient(
@@ -63,3 +70,114 @@ body{
     margin-right: auto;
     margin-bottom:50px;
 }
+
+:root {
+    --clr-black: #1c1c1c;
+    --clr-gray: #ececec;
+    --clr-white: #f7f7f7;
+
+    --type-normal: #A8A878;
+    --type-fire: #F08030;
+    --type-water: #6890F0;
+    --type-grass: #78C850;
+    --type-electric: #F8D030;
+    --type-ice: #98D8D8;
+    --type-fighting: #C03028;
+    --type-poison: #A040A0;
+    --type-ground: #E0C068;
+    --type-flying: #A890F0;
+    --type-psychic: #F85888;
+    --type-bug: #A8B820;
+    --type-rock: #B8A038;
+    --type-ghost: #705898;
+    --type-dark: #705848;
+    --type-dragon: #7038F8;
+    --type-steel: #B8B8D0;
+    --type-fairy: #F0B6BC;
+}
+
+.normal{
+    background-color: var(--type-normal);
+    color: var(--type-normal);
+
+}
+
+.fire{
+    background-color: clr var(--type-fire);
+    color: var(--clr-black);
+}
+.water{
+    background-color: var(--type-water);
+    color: var(--clr-black);
+}
+.grass{
+    background-color: var(--type-grass);
+    background-color: var(--clr-black);
+}
+.electric{
+    background-color: var(--type-electric);
+    background-color: var(--clr-black);
+}
+.ice{
+    background-color: var(--type-ice);
+    background-color: var(--clr-black);
+}
+.fighting{
+    background-color: var(--type-fighting);
+    background-color: var(--clr-black);
+}
+.poison{
+    background-color: var(--type-poison);
+    background-color: var(--clr-black);
+}
+.ground{
+    background-color: var(--type-ground);
+    background-color: var(--clr-black);
+}
+.flying{
+    background-color: var(--type-flying);
+    background-color: var(--clr-black);
+}
+.psychic{
+    background-color: var(--type-psychic);
+    background-color: var(--clr-black);
+}
+.bug{
+    background-color: var(--type-bug);
+    background-color: var(--clr-black);
+}
+.rock{
+    background-color: var(--type-rock);
+    background-color: var(--clr-black);
+}
+.ghost{
+    background-color: var(--type-ghost);
+    background-color: var(--clr-black);
+}
+.dark{
+    background-color: var(--type-dark);
+    background-color: var(--clr-black);
+}
+.dragon{
+    background-color: var(--type-dragon);
+    background-color: var(--clr-black);
+}
+.steel{
+    background-color: var(--type-steel);
+    background-color: var(--clr-black);
+}
+.fairy{
+    background-color: var(--type-fairy);
+    background-color: var(--clr-black);
+}
+
+ul{
+    list-style-type: none;
+}
+
+button{
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+}
+
